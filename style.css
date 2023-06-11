@@ -9,21 +9,19 @@ body{
     grid-template-rows: .4fr 2fr;
 }
 .sidebar{
-    background-color: blue;
+    display: grid;
     grid-row: 1 / 3;
 }
 ul{
     display: grid;
-    grid-template-rows: 2fr .5fr .5fr .5fr .5fr .5fr 2fr .5fr .5fr .5fr;
+    grid-template-rows: 1fr .3fr .3fr .3fr .3fr .3fr 1fr .3fr .3fr .3fr;
     list-style: none;
-}
-.maincontent{
-    grid-column: -2 / -1;
 }
 .header{
     display: grid;
-    grid-template-rows: .4fr .8fr;
-    height: 100%;
+    padding: 10px;
+    grid-template-rows: .2fr .8fr;
+    height: 90%;
     align-content: center;
 }
 .top-header{
@@ -31,8 +29,8 @@ ul{
     grid-template-columns: .3fr 2fr 1fr;
 }
 .searchbar{
-    border-radius: 30px;
     text-align: center;
+    border-radius: 10px;
 }
 .search{ 
     cursor: pointer;
@@ -49,6 +47,7 @@ ul{
     align-self: center;
     grid-template-rows: .2fr;
     grid-template-columns: .22fr 2fr 1fr;
+    border: solid black 1px;;
 }
 #greeting{
     grid-column: 2 / 2;
@@ -59,8 +58,48 @@ ul{
     grid-row: 1;
 }
 .header-buttons{
+    display: grid;
+    grid-template-columns: 1fr .2fr 1fr .2fr 1fr;
     grid-column: 3 / 4;
+    justify-content: space-evenly;
 }
 .header-buttons > button{
     cursor: pointer;
+    width: 120px;
+    border-radius: 10px;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-column: -2 / -1;
+    padding-left: 10px;
+}
+.main-content>div{
+    border: solid black 1px;
+    padding: 10px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 1fr .04fr 1fr;
+    grid-template-rows: .01fr;
+    grid-row: 1 / -3;
+}
+#your-projects{
+    grid-column: 1 / 4;
+}
+.trending{
+    grid-column: -2 / -1;
+    margin-bottom: 27.3px
+}
+.projects>p{
+    border: solid black 1px;
+    text-align: center;
+}
+.announcements{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .2fr 1fr 1fr 1fr;
+}
+.announcemnts>p{
+    border: solid black 1px;
 }
