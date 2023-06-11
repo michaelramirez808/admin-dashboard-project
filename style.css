@@ -1,10 +1,66 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
 body{
     display: grid;
-    grid-template-columns: .5fr 3fr;
+    grid-template-columns: .4fr 3fr;
+    grid-template-rows: .4fr 2fr;
 }
 .sidebar{
+    background-color: blue;
     grid-row: 1 / 3;
 }
+ul{
+    display: grid;
+    grid-template-rows: 2fr .5fr .5fr .5fr .5fr .5fr 2fr .5fr .5fr .5fr;
+    list-style: none;
+}
 .maincontent{
-    grid-column: -2 / -1; 
+    grid-column: -2 / -1;
+}
+.header{
+    display: grid;
+    grid-template-rows: .4fr .8fr;
+    height: 100%;
+    align-content: center;
+}
+.top-header{
+    display: grid;
+    grid-template-columns: .3fr 2fr 1fr;
+}
+.searchbar{
+    border-radius: 30px;
+    text-align: center;
+}
+.search{ 
+    cursor: pointer;
+}
+.profile-information{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+}
+
+.bottom-header{
+    display: grid;
+    align-self: center;
+    grid-template-rows: .2fr;
+    grid-template-columns: .22fr 2fr 1fr;
+}
+#greeting{
+    grid-column: 2 / 2;
+    grid-row: 1;
+}
+#greeting-pic{
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+.header-buttons{
+    grid-column: 3 / 4;
+}
+.header-buttons > button{
+    cursor: pointer;
 }
