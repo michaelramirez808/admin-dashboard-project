@@ -10,31 +10,31 @@
 <body>
     <div class="sidebar">
         <ul>
-            <li>Dashboard</li>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
+            <li><img src="view-dashboard.svg"><p id="dashboard">Dashboard</p></li>
+            <li><img src="home.svg"><p>Home</p></li>
+            <li><img src="account.svg"><p>Profile</p></li>
+            <li><img src="message.svg"><p>Messages</p></li>
+            <li><img src="history.svg"><p>History</p></li>
+            <li><img src="checkbox-marked-circle-auto-outline.svg"><p>Tasks</p></li>
+            <li><img src="account-group.svg"><p>Communities</p></li>
+            <li><img src="cog-outline.svg"><p>Settings</p></li>
+            <li><img src="face-agent.svg"><p>Support</p></li>
+            <li><img src="lock.svg"><p>Privacy</p></li>
         </ul>
     </div>
     <div class="header">
         <div class="top-header">
-            <button class="search">Search</button>
-            <input class="searchbar" type="text">
+            <button type="submit"class="search"><img src="search-web.svg"></button>
+            <input class="searchbar" type="text" placeholder="Discover your next project today.">
             <div class="profile-information">
                 <div></div>
-                <div>Notification Bell(pic)</div>
-                <div>Profile pic</div>
-                <div>Michael Ramirez</div>
+                <div><img id="bell" src="bell.svg" alt="notification bell"></div>
+                <div><img id="account-image" src="account.svg" alt="account picture"></div>
+                <div id="account-name">Michael Ramirez</div>
             </div>
         </div>
         <div class="bottom-header">
-            <div id="greeting-pic">Picture</div>
+            <div id="greeting-profile"><img id="greeting-pic" src="account.svg" alt="account image"></div>
             <div id="greeting">Hi there, <br>Michael Ramirez @michael</div>
             <div class="header-buttons">
                 <button id="new">New</button>
@@ -47,29 +47,38 @@
     </div>
         <div class="main-content">
             <div class="projects"> 
-                <h3 id="your-projects">Your Projects</h3>
+                <h2 id="your-projects">Your Projects</h2>
                 <p>Super Cool Project <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices maximus urna. Sed hendrerit ante vulputate velit luctus</p>
-                <p></p>
+                <div></div>
                 <p>Less Cool Project <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices maximus urna. Sed hendrerit ante vulputate velit luctus varius. Donec im</p>
                 <p>Impossible App <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices maximus urna. Sed hendrerit ante vulputate velit luctus varius. Donec im</p>
-                <p></p>
+                <div></div>
                 <p>Easy Peasy App <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices maximus urna. Sed hendrerit ante vulputate velit luctus varius. Donec im</p>
                 <p>Ad Blocker <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices maximus urna. Sed hendrerit ante vulputate velit luctus varius. Donec im</p>
-                <p></p>
+                <div></div>
                 <p>Money Maker <br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices maximus urna. Sed hendrerit ante vulputate velit luctus varius. Donec im</p>
             </div>
         <div class="announcements">
-            <h3 id="your-announcements">Announcements</h3>
-            <p>Site maintenance</p>
-            <p>Community Share Day</p>
-            <p>Updated Private Policy</p>
+            <h2 id="your-announcements">Announcements</h2>
+            <div>
+                <h4>Site maintenance</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices maximus urna. Sed hendrerit ante vulputate velit luctus varius. Donec im
+            </div>
+            <div>
+                <h4>Community Share Day</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices maximus urna. Sed hendrerit ante vulputate velit luctus varius. Donec im
+            </div>
+            <div>
+                <h4>Updated Private Policy</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultrices maximus urna. Sed hendrerit ante vulputate velit luctus varius. Donec im
+            </div>
         </div>
         <div class="trending">
-            <h3>Trending</h3>
-            <div id="tegan">@tegan</div>
-            <div id="morgan">@morgan</div>
-            <div id="kendal">@kendal</div>
-            <div id="alex">@alex</div>
+            <h2>Trending</h2>
+            <div id="tegan"><img src="account.svg" alt="account"> @tegan</div>
+            <div id="morgan"><img src="account.svg" alt="account"> @morgan</div>
+            <div id="kendal"><img src="account.svg" alt="account"> @kendal</div>
+            <div id="alex"><img src="account.svg" alt="account"> @alex</div>
         </div>
     </div>
 </body>

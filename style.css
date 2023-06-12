@@ -1,21 +1,46 @@
 body,html{
     margin: 0;
-    padding: 0;
+    padding: 2px;
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     display: grid;
     grid-template-columns: .4fr 3fr;
     grid-template-rows: .4fr 2fr;
 }
+button{
+    background-color: #cbd5e1;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+}
+button:hover{
+    box-shadow: 0px 0px 5px;
+    background-color: #94a3b8;
+}
+button:active{
+    background-color: #64748b;
+}
 .sidebar{
     display: grid;
+    border: solid black 1px;
     grid-row: 1 / 3;
+    justify-content: center;
+    background-color: #cbd5e1;
+}
+li>img{
+    height: 20px;
+    width: 40px;
+    grid-column: 1 / 2;
+    justify-content: center;
 }
 ul{
     display: grid;
     grid-template-rows: 1fr .3fr .3fr .3fr .3fr .3fr 1fr .3fr .3fr .3fr;
+    grid-template-columns: 1fr;
     list-style: none;
+    justify-content: center;
 }
 .header{
     display: grid;
@@ -23,6 +48,20 @@ ul{
     grid-template-rows: .2fr .8fr;
     height: 90%;
     align-content: center;
+    border: solid black 1px;
+    box-shadow: 0px 3px 3px grey;
+}
+#bell{
+    height: 50px;
+    width: 50px;
+}
+#account-image{
+    height: 50px;
+    width: 50px;
+}
+#account-name{
+    font-weight: 700;
+    font-size: 20px;
 }
 .top-header{
     display: grid;
@@ -31,12 +70,19 @@ ul{
 .searchbar{
     text-align: center;
     border-radius: 10px;
+    width: 80%;
+    height: 65%;
 }
 .search{ 
-    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 100px;
 }
 .profile-information{
     display: grid;
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 10px;
     justify-content: center;
@@ -47,15 +93,21 @@ ul{
     align-self: center;
     grid-template-rows: .2fr;
     grid-template-columns: .22fr 2fr 1fr;
-    border: solid black 1px;;
 }
 #greeting{
     grid-column: 2 / 2;
     grid-row: 1;
 }
 #greeting-pic{
+    display: flex;
+    justify-self: end;
+    height: 40px;
+    width: 50px;
     grid-column: 1 / 2;
     grid-row: 1;
+}
+#greeting-profile{
+    display: grid;
 }
 .header-buttons{
     display: grid;
@@ -64,8 +116,7 @@ ul{
     justify-content: space-evenly;
 }
 .header-buttons > button{
-    cursor: pointer;
-    width: 120px;
+    width: 1fr;
     border-radius: 10px;
 }
 .main-content{
@@ -75,7 +126,6 @@ ul{
     padding-left: 10px;
 }
 .main-content>div{
-    border: solid black 1px;
     padding: 10px;
 }
 .projects{
@@ -89,17 +139,39 @@ ul{
 }
 .trending{
     grid-column: -2 / -1;
-    margin-bottom: 27.3px
+    border-radius: 10px;
+    margin: 20px;
+    border: solid black 1px;
 }
 .projects>p{
     border: solid black 1px;
     text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    border: solid black 1px;
+    box-shadow: 0px 3px 8px grey;
 }
 .announcements{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: .2fr 1fr 1fr 1fr;
+    border-radius: 10px;
+    margin: 20px;
+    border: solid black 1px;
+    border: solid black 1px;
+    box-shadow: 0px 3px 8px grey; 
 }
 .announcemnts>p{
     border: solid black 1px;
+}
+.trending{
+    display: grid;
+    border: solid black 1px;
+    box-shadow: 0px 3px 8px grey;
+}
+.trending>div>img{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    align-items: end;
 }
